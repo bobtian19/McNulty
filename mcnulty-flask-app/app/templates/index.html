@@ -1,0 +1,278 @@
+{% extends 'base.html' %}
+
+{% block body %}
+  <section class="header">
+    <h2 class="title"><br><center><img width="300" src="https://cdn.okccdn.com/media/img/hub/mediakit/okcupid_whitebg.png"><br><b>Questionnaire</h2></b></center>
+  </section>
+  <hr />
+
+<div id="wrapper">
+  <h1>Let's Play: Twenty Questions!</h1>
+  <p>Take this questionnaire to find out what we can predict.</p>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <!-- Question 1 -->
+    <div class="row">
+    <h2>A little grade 10 science. Ideal Gas Law?</h2>
+    <input type="radio" name="q18698" id="option1" value="1" checked> PV = nRT </input><br>
+    <input type="radio" name="q18698" id="option2" value="2"> G + V = 1/T </input><br>
+    <input type="radio" name="q18698" id="option3" value="3"> y=mx+b </input><br>
+    <input type="radio" name="q18698" id="option4" value="4"> Not sure / wish I could skip this one </input><br>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="row">
+    <h2>How frequently do you bathe or shower?</h2>
+    <input type="radio" name="q1062" id="option1" value="1" checked> At least once a day. </input><br>
+    <input type="radio" name="q1062" id="option2" value="2"> Usually daily. I skip some. </input><br>
+    <input type="radio" name="q1062" id="option3" value="3"> A couple times a week. </input><br>
+    <input type="radio" name="q1062" id="option4" value="4"> Once a week or less. </input><br>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="row">
+    <h2>Would you date someone who was already in a committed relationship with someone else?</h2>
+    <input type="radio" name="q1128" id="option1" value="1"> Yes, even in secret. </input><br>
+    <input type="radio" name="q1128" id="option2" value="2"> Yes, but only if everybody knew. </input><br>
+    <input type="radio" name="q1128" id="option3" value="3" checked> No, but I don't think it's inherently wrong. </input><br>
+    <input type="radio" name="q1128" id="option4" value="4"> No, it's wrong. </input><br>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="row">
+    <h2>Would you strongly prefer to go out with someone of your own skin color / racial background?</h2>
+    <input type="radio" name="q123" id="option1" value="1"> Yes </input><br>
+    <input type="radio" name="q123" id="option2" value="2" checked> No </input><br>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="row">
+    <h2>Would you get upset if your girlfriend/boyfriend flirted in front of you?</h2>
+    <input type="radio" name="q136" id="option1" value="1"> Yes </input><br>
+    <input type="radio" name="q136" id="option2" value="2" checked> No </input><br>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="row">
+    <h2>Could you date someone with no long-term goals?</h2>
+    <input type="radio" name="q15280" id="option1" value="1"> Yes </input><br>
+    <input type="radio" name="q15280" id="option2" value="2" checked> No </input><br>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="row">
+    <h2>Would you consider sleeping with someone on the first date?</h2>
+    <input type="radio" name="q1597" id="option1" value="1" checked> Yes </input><br>
+    <input type="radio" name="q1597" id="option2" value="2"> No </input><br>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="row">
+    <h2>How long do your romantic relationships usually last?</h2>
+    <input type="radio" name="q19874" id="option1" value="1"> 0-6 months </input><br>
+    <input type="radio" name="q19874" id="option2" value="2"> 6-12 months </input><br>
+    <input type="radio" name="q19874" id="option3" value="3" checked> 12+ months </input><br>
+    <input type="radio" name="q19874" id="option4" value="4"> I've never been in a relationship </input><br>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="row">
+    <h2>What's the highest level of education you've completed?</h2>
+    <input type="radio" name="q274" id="option1" value="1"> Graduate School </input><br>
+    <input type="radio" name="q274" id="option2" value="2" checked> College </input><br>
+    <input type="radio" name="q274" id="option3" value="3"> High School </input><br>
+    <input type="radio" name="q274" id="option4" value="4"> Junior High </input><br>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="row">
+    <h2>Regardless of future plans, what's more interesting to you right now? (Sex = or Love)</h2>
+    <input type="radio" name="q35" id="option1" value="1" checked> Sex </input><br>
+    <input type="radio" name="q35" id="option2" value="2"> Love </input><br>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="row">
+    <h2>Do you enjoy intense intellectual conversations?</h2>
+    <input type="radio" name="q358084" id="option1" value="1" checked> Yes </input><br>
+    <input type="radio" name="q358084" id="option2" value="2"> No </input><br>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="row">
+    <h2>Would you be willing to date someone who plays video games almost every day, for at least 2 hours?</h2>
+    <input type="radio" name="q37693" id="option1" value="1"> Yes, I'd be playing with them. </input><br>
+    <input type="radio" name="q37693" id="option2" value="2"> Yes, but I would not play that much. </input><br>
+    <input type="radio" name="q37693" id="option3" value="3"> Yes, but I don't like video games. </input><br>
+    <input type="radio" name="q37693" id="option4" value="4" checked> No. </input><br>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="row">
+    <h2>Is there a such thing as having had too many sexual partners?</h2>
+    <input type="radio" name="q393" id="option1" value="1" checked> Yes </input><br>
+    <input type="radio" name="q393" id="option2" value="2"> No </input><br>
+    </div>
+
+    <!-- Question 14 -->
+    <div class="row">
+    <h2>Are you happy with your life?</h2>
+    <input type="radio" name="q4018" id="option1" value="1" checked> Yes </input><br>
+    <input type="radio" name="q4018" id="option2" value="2"> No </input><br>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="row">
+    <h2>How much influence or control do your parents have over your life?</h2>
+    <input type="radio" name="q43261" id="option1" value="1" checked> I am my own person. </input><br>
+    <input type="radio" name="q43261" id="option2" value="2"> I consider their opinion but go my own way. </input><br>
+    <input type="radio" name="q43261" id="option3" value="3"> I almost always do what my parents think is best. </input><br>
+    <input type="radio" name="q43261" id="option4" value="4"> I always do what my parents say. </input><br>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="row">
+    <h2>Is astrological sign at all important in a match?</h2>
+    <input type="radio" name="q60100" id="option1" value="1"> Yes </input><br>
+    <input type="radio" name="q60100" id="option2" value="2" checked> No </input><br>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="row">
+    <h2>How important to you is a potential match's sense of humor?</h2>
+    <input type="radio" name="q66506" id="option1" value="1" checked> Very important. </input><br>
+    <input type="radio" name="q66506" id="option2" value="2"> Somewhat important. </input><br>
+    <input type="radio" name="q66506" id="option3" value="3"> Not important. </input><br>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="row">
+    <h2>How frequently do you drink alcohol?</h2>
+    <input type="radio" name="q77" id="option1" value="1" checked> Very often </input><br>
+    <input type="radio" name="q77" id="option2" value="2"> Sometimes </input><br>
+    <input type="radio" name="q77" id="option3" value="3"> Rarely </input><br>
+    <input type="radio" name="q77" id="option4" value="4"> Never </input><br>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="row">
+    <h2>What's your relationship with marijuana?</h2>
+    <input type="radio" name="q79" id="option1" value="1"> I smoke regularly. </input><br>
+    <input type="radio" name="q79" id="option2" value="2"> I smoke occasionally. </input><br>
+    <input type="radio" name="q79" id="option3" value="3"> I smoked in the past, but no longer. </input><br>
+    <input type="radio" name="q79" id="option4" value="4" checked> Never. </input><br>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="row">
+    <h2>How much do you go 'clubbing' (out dancing in bars)?</h2>
+    <input type="radio" name="q81" id="option1" value="1"> Lots </input><br>
+    <input type="radio" name="q81" id="option2" value="2"> Sometimes </input><br>
+    <input type="radio" name="q81" id="option3" value="3" checked> Rarely </input><br>
+    <input type="radio" name="q81" id="option4" value="4"> Never </input><br>
+    </div>
+
+
+
+<!--   option = request.form['options'] -->
+
+    <button type="submit" id="submit">Submit Your Answers</button>
+  <!-- <button type="reset" id="reset" onclick="resetAnswer()">Reset</button> -->
+</form>
+  <h4><hr />
+  <b>Predictions</b>
+  <hr /></h4>
+  <h4>
+    {% if prediction1 %}
+    {{ prediction1 }}
+    {% else %}
+      Please fill out the form above!
+    {% endif %}
+  </h4>
+
+  <h4>
+    {% if prediction2 %}
+    {{ prediction2 }}
+    {% else %}
+      Please fill out the form above!
+    {% endif %}
+  </h4>
+
+  <h4>
+    {% if prediction3 %}
+    {{ prediction3 }}
+    {% else %}
+      Please fill out the form above!
+    {% endif %}
+  </h4>
+
+  <h4>
+    {% if prediction4 %}
+    {{ prediction4 }}
+    {% else %}
+      Please fill out the form above!
+    {% endif %}
+  </h4>
+  <hr />
+  <h4>
+  <b>  Bonus Predictions:</b>
+  <h4>
+  <hr />
+    <h4>
+      {% if prediction5 %}
+      {{ prediction5 }}
+      {% else %}
+        Please fill out the form above!
+      {% endif %}
+    </h4>
+
+    <h4>
+      {% if prediction6 %}
+      {{ prediction6 }}
+      {% else %}
+        Please fill out the form above!
+      {% endif %}
+    </h4>
+
+    <h4>
+      {% if prediction7 %}
+      {{ prediction7 }}
+      {% else %}
+        Please fill out the form above!
+      {% endif %}
+    </h4>
+
+    <h4>
+      {% if prediction8 %}
+      {{ prediction8 }}
+      {% else %}
+        Please fill out the form above!
+      {% endif %}
+    </h4>
+</div>
+<h4><hr />
+<b>Visualizations</b>
+<hr /></h4>
+<div>
+   <a href="https://plot.ly/~bobtian/49/" target="_blank" title="Ranking feature strength for each predictor" style="display: block; text-align: center;"><img src="https://plot.ly/~bobtian/49.png" alt="Ranking feature strength for each predictor" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   <script data-plotly="bobtian:49"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+   <a href="https://plot.ly/~bobtian/45/" target="_blank" title="Mapping Answers of OK Cupid Users" style="display: block; text-align: center;"><img src="https://plot.ly/~bobtian/45.png" alt="Mapping Answers of OK Cupid Users" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   <script data-plotly="bobtian:45"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+   <a href="https://plot.ly/~bobtian/47/" target="_blank" title="Correlations of OK Cupid Answers to Sex-Drive Score" style="display: block; text-align: center;"><img src="https://plot.ly/~bobtian/47.png" alt="Correlations of OK Cupid Answers to Sex-Drive Score" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   <script data-plotly="bobtian:47"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+<div>
+   <a href="https://plot.ly/~bobtian/51/" target="_blank" title="Female vs Male" style="display: block; text-align: center;"><img src="https://plot.ly/~bobtian/51.png" alt="Female vs Male" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+   <script data-plotly="bobtian:51"  src="https://plot.ly/embed.js" async></script>
+</div>
+
+
+{% endblock body %}
